@@ -1,0 +1,48 @@
+{
+  "name": "@robzzson/silhouette",
+  "version": "1.0.0",
+  "description": "JavaScript implementation of Silhouette Coefficient used for the evaluation of clustering quality",
+  "main": "dist/silhouette.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest",
+    "test-cov": "jest --coverage",
+    "lint": "eslint src",
+    "format": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\"",
+    "check": "prettier --check \"{src,__{tests,mocks}__}/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robzzson/silhouette-coefficient.git"
+  },
+  "keywords": [
+    "silhouette",
+    "coefficient",
+    "cluster",
+    "quality"
+  ],
+  "author": "Robert Grodecki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Robzzson/silhouette-coefficient/issues"
+  },
+  "homepage": "https://github.com/Robzzson/silhouette-coefficient#readme",
+  "dependencies": {
+    "ml-distance-euclidean": "^2.0.0",
+    "ml-distance-matrix": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@types/jest": "^26.0.3",
+    "babel-jest": "^26.1.0",
+    "babel-plugin-rewire": "^1.2.0",
+    "eslint": "^7.3.1",
+    "eslint-plugin-jest": "^23.17.1",
+    "jest": "^26.1.0",
+    "jest-matcher-deep-close-to": "^2.0.1",
+    "prettier": "^2.0.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
