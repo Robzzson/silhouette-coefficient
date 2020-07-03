@@ -1,6 +1,6 @@
 {
   "name": "@robzzson/silhouette",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "description": "JavaScript implementation of Silhouette Coefficient used for the evaluation of clustering quality",
   "main": "silhouette.js",
   "module": "src/silhouette.js",
