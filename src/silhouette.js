@@ -40,7 +40,7 @@ function silhouetteSamples(data, labels, reduceFunction) {
   let labelsFreq = countBy(labels);
   let samples = reduceFunction(data, labels, labelsFreq);
   let denom = labels.map((val) => labelsFreq[val] - 1);
-  let intra = samples.intraDist.map((val, ind) => val / denom[ind]);
+  let intra = samples.intraDist.map((val, ind) => denom[ind]? val / denom[ind] : 0);
   let inter = samples.interDist;
   return inter
     .map((val, ind) => val - intra[ind])
